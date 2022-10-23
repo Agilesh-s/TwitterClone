@@ -7,6 +7,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { TweetPageComponent } from './tweet-page/tweet-page.component';
 
 const appRoutes:Routes=[
   {
@@ -14,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"signup",component:SignupComponent
+  },
+  {
+    path:"tweet",component:TweetPageComponent
   }
 ]
 
@@ -22,12 +28,15 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    TweetPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

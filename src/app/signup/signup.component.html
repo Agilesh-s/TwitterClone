@@ -5,34 +5,34 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">NAME</label>
-                    <input type="text" class="form-control" placeholder="NAME">
+                    <input type="text" class="form-control" placeholder="NAME" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">MOBILE NUMBER</label>
-                    <input type="text" class="form-control" placeholder="MOBILE NUMBER">
+                    <input type="text" class="form-control" placeholder="MOBILE NUMBER" name="mobileNumber" [(ngModel)]="mobileNumber">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">EMAIL-ID</label>
-                    <input type="email" class="form-control" placeholder="EMAIL-ID">
+                    <input type="email" class="form-control" placeholder="EMAIL-ID" name="email" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">ADDRESS</label>
-                   <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="ADDRESS"></textarea>
+                   <textarea id="" cols="30" rows="10" class="form-control" placeholder="ADDRESS" name="address" [(ngModel)]="address"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">DATE OF BIRTH</label>
-                    <input type="date" class="form-control" placeholder="DATE OF BIRTH">
+                    <input type="date" class="form-control" placeholder="DATE OF BIRTH" name="dob" [(ngModel)]="dob">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">PASSWORD</label>
-                    <input type="text" class="form-control" placeholder="PASSWORD">
+                    <input type="password" class="form-control" placeholder="PASSWORD" name="password" [(ngModel)]="password">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <label for="" class="form-label">CONFIRM PASSWORD</label>
-                    <input type="text" class="form-control" placeholder="CONFIRM PASSWORD">
+                    <input type="password" class="form-control" placeholder="CONFIRM PASSWORD">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">SIGNUP</button>
+                    <button class="btn btn-success" (click)="readValues()">SIGNUP</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <a routerLink ="">GO TO LOGIN PAGE</a>
